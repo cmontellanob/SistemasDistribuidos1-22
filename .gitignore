@@ -23,3 +23,7 @@
 hs_err_pid*
 /ManejoAlumnos/target/
 /tema3/soquetTCP/target/
+/conversacion/target/
+/tema3/ServidorWeb/target/
+/tema3/MultiHiloTCP/target/
+/tema3/soquetsUDP/target/
