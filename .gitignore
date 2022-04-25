@@ -27,3 +27,4 @@ hs_err_pid*
 /tema3/ServidorWeb/target/
 /tema3/MultiHiloTCP/target/
 /tema3/soquetsUDP/target/
+/tema4/factorialRMI/target/

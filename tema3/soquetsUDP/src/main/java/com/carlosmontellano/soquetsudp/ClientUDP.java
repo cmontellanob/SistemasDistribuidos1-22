@@ -19,7 +19,7 @@ public class ClientUDP {
     int puerto = 6789;
 
     try {
-        String dato="Hola Mundo";
+        String dato="2";
         String ip="localhost";
       DatagramSocket socketUDP = new DatagramSocket();
       byte[] mensaje = dato.getBytes();
