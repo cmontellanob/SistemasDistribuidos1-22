@@ -33,13 +33,22 @@ public class ServerUDP {
 
         System.out.print("Datagrama recibido del host: " +
                            peticion.getAddress());
-        System.out.println(" desde el puerto remoto: " +
+        System.out.println(" desde enl puerto remoto: " +
                            peticion.getPort());
         
         
+        String cadena =new String (peticion.getData());
+        int valor=Integer.valueOf(cadena.trim());
+        System.out.println(" valor enviado: " +valor
+                         );
         // Construimos el DatagramPacket para enviar la respuesta
+        int resp=valor*2;
+        String response=String.valueOf(resp);
+              byte[] mensaje = response.getBytes();
+              
+
         DatagramPacket respuesta =
-          new DatagramPacket(peticion.getData(), peticion.getLength(),
+          new DatagramPacket(mensaje, response.length(),
                              peticion.getAddress(), peticion.getPort());
 
         // Enviamos la respuesta, que es un eco
